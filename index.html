@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Daily</title>
+    <!-- daisyUi and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="container mx-auto font-mulish">
+    <header>
+        <!-- navbar started -->
+        <section class="lg:max-w-[1440px] py-4">
+                <div class="navbar bg-white">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          
+                          <li><a>Item 3</a></li>
+                        </ul>
+                      </div>
+                      <a class="text-[#12132D] text-3xl font-extrabold ">DNews</a>
+                    </div>
+                    <div class="navbar-end hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <div class="tooltip" data-tip="Home">
+                            <li><img class="p-4 border rounded-full"src="images/Frame (1).png" alt=""></li>
+                        </div>
+                        <div class="tooltip" data-tip="Write">
+                            <li><img class="p-4 border rounded-full ml-2" src="images/Frame.png" alt=""></li>
+                        </div>
+                        <div class="tooltip" data-tip="Add">
+                            <li><img class="p-4 border rounded-full ml-2" src="images/Frame (3).png" alt=""></li>
+                        </div>
+                        <div class="tooltip" data-tip="Country">
+                            <li><img class="p-4 border rounded-full ml-2" src="images/Frame (2).png" alt=""></li>
+                        </div>    
+                      </ul>
+                      <a class="btn ml-2 rounded-full text-white font-bold text-xl px-6 py-2 bg-[#797DFC]">Sign In</a>
+                    </div>
+                    <!-- <div class="navbar-end">
+                      <a class="btn">Button</a>
+                    </div> -->
+                  </div>
+        </section>
+        <!-- banner started -->
+        <section>
+            <div class="lg:max-w-[1440px] bg-[#12132D] rounded-3xl">
+                <div class="hero min-h-screen rounded-3xl bg-contain bg-bottom  bg-no-repeat" style="background-image: url('images/bgbanner.png');">
+                    <div class="hero-content text-left gap-[40px] text-neutral-content">
+                        <div class="max-w-md">
+                          <h1 class="mb-5 text-5xl font-bold">Welcome To The <br> DNews Forum</h1>
+                          <p class="mb-5">Share your opinion and win special gift from DNews forum!</p>
+                            <label class="input rounded-full input-bordered flex items-center">
+                                <input id="input-field" type="text" class="grow" placeholder="Search" />
+                                <a onclick="searchButton()" class="btn mr-[-12px] rounded-full text-white px-4 text-xl bg-[#797DFC]">Search</a>
+                            </label>
+                        </div>
+                        <div class="max-w-md bg-white p-8 rounded-3xl text-[#12132D] ">
+                            <div class="opacity-80 flex w-44 justify-between">
+                                <p class="mb-5">Resisters Users</p>
+                                <p>01</p>
+                            </div>
+                            <div class="opacity-80 flex w-44 justify-between">
+                                <p class="mb-5">Forum</p>
+                                <p>01</p>
+                            </div>
+                            <div class="opacity-80 flex w-44 justify-between">
+                                <p class="mb-5">Topics</p>
+                                <p>01</p>
+                            </div>
+                            <div class="opacity-80 flex w-44 justify-between">
+                                <p class="">Replies</p>
+                                <p>01</p>
+                            </div> 
+                          </div>
+                    </div>
+        </div>
+        </section>
+    </header>
+
+    <main>
+      <!-- discuss section -->
+      <section>
+        <!-- title with description -->
+        <div class="text-center lg:w-[691px] mx-auto mt-12 mb-7">
+          <h1 class="title-color text-4xl font-extrabold">Let's Discuss</h1>
+          <p class="description-color">You are allowed to give your opinion in our site. We do give value to public opinion.</p>
+        </div>
+
+        <!-- post section started -->
+        <div>
+          <div id="posts-container" class="">
+          </div>
+        </div>
+        <!-- messages beside the post -->
+        <div class="w-1/2">
+
+        </div>
+        
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
